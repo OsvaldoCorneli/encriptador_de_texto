@@ -1,0 +1,30 @@
+:root{
+    --color-princial: #F3F5FC;
+    
+}
+
+body{
+    background-color: var(--color-princial);
+    height: 100vh;
+
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+.contenedor__input{
+    align-self: center;
+    justify-content: space-around;
+    background-color: var(--color-princial);
+    border: none;
+    color: #0A3871;
+    font-family: inter;
+    font-size: 1.5rem;
+}
+
+input{
+    
+    
+}

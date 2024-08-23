@@ -18,49 +18,53 @@ body{
 main{
     display: flex;
     height: 100vh;
+    gap: 80px;
 }
 
 .contenedor__imagen img{
-    margin: 40px 40px 0 40px;
+    margin: 40px 0 0 40px;
 }
 
 .contenedor__input{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    gap: 40px;
 }
 
 .contenedor__input textarea{
     background-color: var(--color-princial);
     font-family: "Inter", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     color: #0A3871;
     border: none;
     outline: none;
     font-size: 1.5rem;
     width: 93%;
-    height: 42vh;
-    margin: 168px 0 0 40px;
+    height: 100vh;
+    margin: 168px 0 0 0;
 }
 
 .contenedor__input span{
     font-family: "Inter", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 0.75rem;
-    margin: 0 0 0 40px;
 }
 
 textarea::placeholder {
   color: #0A3871;
-  /* opacity: 1; */
+  opacity: 1;
 }
 
+.contenedor__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 .contenedor__botones{
     display: flex;
     gap: 24px;
-    margin: 0 0 72px 40px;
+    margin: 0 0 72px 0px;
 }
 
 #boton__encriptar{
@@ -77,4 +81,51 @@ textarea::placeholder {
     text-decoration: none;
     background-color: #D8DFE8;
     padding: 24px 118.4px;
+}
+
+.seccion__mensaje{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    padding: 40px 32px;
+}
+
+.seccion__mensaje__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+    gap: 16px;
+    border-radius: 36px;
+
+}
+
+.seccion__mensaje__body img{
+    width: 336px;
+    height: 304px;
+    margin: 0 32px;
+}
+
+.seccion__mensaje__texto{
+    padding: 0 32px;
+    text-align: center;
+}
+
+.seccion__mensaje__texto h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.seccion__mensaje__texto p  {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contenedor__bottom span i{
+    font-size: 1rem;
+    margin: 0 3px  0 0;
 }

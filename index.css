@@ -284,14 +284,14 @@ textarea::placeholder {
 @media(min-width: 1200px) {
 
         body{
-            justify-content: start;
-        
+            justify-content: center;      
         }
         
         main{
             display: flex;
             flex-direction: row ;
-            height: 100vh;
+            justify-content: center;
+            height: 90vh;
             gap: 80px;
         }
         
@@ -314,7 +314,7 @@ textarea::placeholder {
             outline: none;
             font-size: 1.5rem;
             width: 93%;
-            height: 100vh;
+            height: 60vh;
             margin: 168px 0 0 0;
         }
         

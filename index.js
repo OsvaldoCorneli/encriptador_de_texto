@@ -7,7 +7,6 @@ const alerta = document.querySelector(".contenedor__bottom span")
 function encriptar() {
 
     if (alertaFunction()) {
-        console.log("cumple")
         cambiarDisplay(encriptarTexto(textArea.value))
     } else {
         return;
@@ -18,7 +17,6 @@ function encriptar() {
 function desencriptar() {
 
     if (alertaFunction()) {
-        console.log("cumple")
         cambiarDisplay(desencriptarTexto(textArea.value))
     } else {
         return;
@@ -43,7 +41,6 @@ function cambiarDisplay(texto) {
     const seccionMensaje = document.querySelector(".seccion__mensaje__encriptado")
     const seccionNingunMensaje = document.querySelector(".seccion__mensaje")
     if (seccionMensaje == undefined) {
-        console.log("Indefinido")
         if (texto != "") {
             seccionNingunMensaje.style.display = "none"
             const seccions = document.createElement("section")

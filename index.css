@@ -108,6 +108,15 @@ textarea::placeholder {
     padding: 64px 16px;
 }
 
+.seccion__mensaje__encriptado{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 64px 16px;
+
+}
+
 .seccion__mensaje__body{
     display: flex;
     flex-direction: column;
@@ -150,13 +159,15 @@ textarea::placeholder {
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    height: 91.5vh;
+    height: 100vh;
     gap: 16px;
     border-radius: 36px;
-    max-width: 400px;
     padding: 32px;
     margin-top: 40px;
     margin-bottom: 40px;
+    width: 100%;
+    overflow: hidden; 
+    max-width: 400px;
 
 }
 
@@ -165,6 +176,11 @@ textarea::placeholder {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
+    overflow-y: auto; /* Habilita solo el scroll vertical */
+    overflow-x: hidden; 
 }
 
 .seccion__mensaje__body__encriptado a{
@@ -174,6 +190,9 @@ textarea::placeholder {
     border: 1px solid #0A3871;
     text-align: center;
     padding: 24px;
+    width: 332px;
+    align-self: center;
+    
 }
 
 
@@ -239,10 +258,23 @@ textarea::placeholder {
    flex-direction: column;
     padding: 40px 40px;
 }
+.seccion__mensaje__encriptado{
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+    padding: 40px 40px;
+
+}
 
 .seccion__mensaje__body{
     max-width: 1200px;
 }
+
+.seccion__mensaje__body__encriptado{
+    max-width: 1200px;
+}
+
+
 
 .seccion__mensaje__body img{
     width: 336px;
@@ -277,6 +309,8 @@ textarea::placeholder {
     border: 1px solid #0A3871;
     text-align: center;
     padding: 24px;
+    width: 332px;
+    align-self: center;
 }
 }
 

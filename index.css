@@ -181,7 +181,7 @@ textarea::placeholder {
     word-wrap: break-word; 
     overflow-wrap: break-word;
     white-space: normal; 
-    overflow-y: auto; /* Habilita solo el scroll vertical */
+    overflow-y: auto; 
     overflow-x: hidden; 
 }
 

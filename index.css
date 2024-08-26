@@ -88,6 +88,7 @@ textarea::placeholder {
     padding: 24px 0;
     text-align: center;  
     width: 343px;
+    cursor: pointer;
 }
 
 #boton__desencriptar{
@@ -98,6 +99,7 @@ textarea::placeholder {
     padding: 24px 0;
     text-align: center;
     width: 343px;
+    cursor: pointer;
 }
 
 .seccion__mensaje{
@@ -192,7 +194,7 @@ textarea::placeholder {
     padding: 24px;
     width: 332px;
     align-self: center;
-    
+    cursor: pointer;
 }
 
 
@@ -400,6 +402,7 @@ textarea::placeholder {
            justify-content: center;
             padding: 40px 32px;
         }
+        
         
         .seccion__mensaje__body{
             display: flex;

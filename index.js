@@ -8,7 +8,7 @@ function encriptar() {
 
     if (alertaFunction()) {
         console.log("cumple")
-        cambiarDisplay(textArea.value)
+        cambiarDisplay(encriptarTexto(textArea.value))
     } else {
         return;
     }
@@ -19,7 +19,7 @@ function desencriptar() {
 
     if (alertaFunction()) {
         console.log("cumple")
-        cambiarDisplay(textArea.value)
+        cambiarDisplay(desencriptarTexto(textArea.value))
     } else {
         return;
     }
@@ -51,7 +51,7 @@ function cambiarDisplay(texto) {
             seccions.innerHTML = `
         <div class="seccion__mensaje__body__encriptado">
                  <p class="texto__encriptado">${texto}</p>
-                <a href="" id="boton__copiar">Copiar  </a>
+                <a onclick="copiarTexto()" id="boton__copiar">Copiar  </a>
         </div>
         `
 
@@ -65,14 +65,48 @@ function cambiarDisplay(texto) {
             seccionMensaje.innerHTML = `
         <div class="seccion__mensaje__body__encriptado">
                  <p class="texto__encriptado">${texto}</p>
-                <a href="" id="boton__copiar">Copiar  </a>
+                <a onclick="copiarTexto()" id="boton__copiar">Copiar  </a>
         </div>
         `
 
         } else {
             document.querySelector("main").removeChild(seccionMensaje)
-            seccionNingunMensaje.style.display = "flex"    
+            seccionNingunMensaje.style.display = "flex"
 
         }
     }
+}
+
+
+function encriptarTexto(texto) {
+    return texto
+        .replace(/e/g, "enter")
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
+        .replace(/o/g, "ober")
+        .replace(/u/g, "ufat");
+}
+
+function desencriptarTexto(texto) {
+    return texto
+        .replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
+}
+
+
+function copiarTexto() {
+    const texto = document.querySelector(".texto__encriptado").innerText;
+
+    const campoTemporal = document.createElement("textarea");
+    campoTemporal.value = texto;
+    document.body.appendChild(campoTemporal);
+    campoTemporal.select();
+    campoTemporal.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    document.body.removeChild(campoTemporal);
+
+    alert("Texto Copiado");
 }
